@@ -1,0 +1,98 @@
+/* general rules */
+
+* {
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+/* modals */
+
+#modals h5 {
+  font-family: 'fantasy', serif;
+  font-size: 2em;
+}
+
+/* navigation */
+
+.bg-transparent-80 {
+  background-color: rgba(255,255,255,0.80);
+}
+/* header */
+
+#head a, #head a:hover {
+  text-decoration: none;
+
+}
+
+#head h1 {
+  font-family: 'fantasy', serif;
+  font-size: 2.5em;
+}
+
+/* jumbotron */
+
+#jumbotron h2 {
+  font-family: 'fantasy', serif;
+  font-size: 2em;
+}
+
+/* news */
+
+#news-left h4 {
+    font-family: 'fantasy', serif;
+    font-size: 2em;
+}
+
+#news-mid h4 {
+    font-family: 'fantasy', serif;
+    font-size: 1.2em;
+}
+
+#news-right h4 {
+    font-family: 'fantasy', serif;
+    font-size: 2em;
+}
+
+/* body */
+
+#body h4 {
+  font-family: 'fantasy', serif;
+  font-size: 2em;
+}
+
+#body h5 {
+  font-family: 'fantasy', serif;
+  font-size: 1.5em;
+}
+
+#body h2 {
+  font-family: 'fantasy', serif;
+  font-size: 2em;
+}
+
+/* popular aside */
+
+#pop-aside p {
+    font-size: 0.8em;
+}
+
+#body #pop-aside h4 {
+  font-family: 'fantasy', serif;
+  font-size: 1.2em;
+}
+
+#pop-aside h2 {
+  font-family: 'Roboto', serif;
+  font-size: 2em;
+}
+
+ /* footer */
+
+ #foot li {
+   font-size: 1.2em;
+ }

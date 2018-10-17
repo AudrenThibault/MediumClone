@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Demo Day at Wild Code School : La Loupe</title>
+  <link rel="icon" href="./favicon-3b6f8bfa6755d61ebe78c734fd2234a3f0f41e21dd7bf28204f24831e585ce6c.ico" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="styles/article.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|EB+Garamond:800|Playfair+Display:700|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <!-- modals -->
+  <section id="modals">
+    <!-- become a member -->
+    <div class="modal fade" id="membership" tabindex="-1" role="dialog" aria-labelledby="becomeMember" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="becomeMember">Some thoughts are worth more than a penny.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center my-3">
+              <div class="col-3 media-body">
+                <img class="rounded " src="https://placeimg.com/100/100/tech" alt="Generic placeholder image">
+              </div>
+              <div class="col-9 modal-body pt-0">
+                <p>Become a member for unlimited, ad-free reading. Just $5/month or $50/year..</p>
+                <p>Have an account ? <a href="#" class="text-muted" data-toggle="modal" data-target="#sign-in" data-dismiss="modal">Sign in</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No, thanks</button>
+            <button type="button" href="#" class="btn btn-outline-success">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sign in -->
+    <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="sign-in" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sign-in">Welcome back.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center my-3">
+              <form action="" class="align-self-center">
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+                </div>
+                <div class="form-group">
+                  <p>Have an account ? <a href="#" class="text-muted" data-toggle="modal" data-target="#membership" data-dismiss="modal">Sign in</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- work in progress -->
+    <div class="modal fade" id="wip" tabindex="-1" role="dialog" aria-labelledby="workInProgress" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="wip">Oups ! Something went wrong..</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center my-3">
+              <div class="col-12 modal-body">
+                <p>This section is not available yet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- navigation bar -->
+  <div id="navigation" class="container-fluid sticky-top">
+    <div class="row">
+      <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent-80">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav list-inline">
+              <li class="nav-item list-inline-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Youth, now</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Culture</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="tech.html">Tech</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Entrepreneurship</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Self</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Politics</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Design</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Science</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Popular</a>
+              </li>
+              <li class="nav-item list-inline-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">More</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- website's title -->
+  <header id="head" class="container-fluid">
+    <div class="row justify-content-center py-2">
+      <div class="col-12 col-lg-9">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-3 d-none d-xl-block text-left">
+            <a href="#" class="text-muted" data-toggle="modal" data-target="#membership">Become a member</a>
+          </div>
+          <div class="col-3 text-left text-lg-center">
+            <a href="index.html"><h1 class="text-dark font-weight-bold">Medium</h1></a>
+          </div>
+          <div class="col-3">
+            <div class="row justify-content-end align-items-center">
+              <div class="d-none d-xl-block col-xl-1">
+                <a href="#"><i class="fas fa-search text-dark"></i></a>
+              </div>
+              <div class="d-none d-xl-block col-xl-5 text-right">
+                <a href="#" class="text-success link" data-toggle="modal" data-target="#sign-in">Sign in</a>
+              </div>
+              <div class="col-12 col-xl-5 text-right">
+                <button href="#" class="btn btn-outline-success" data-toggle="modal" data-target="#membership">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- article's header -->
+  <section id="article-head" class="container-fluid pb-2">
+    <div class="row">
+      <div class="col-12 col-lg-6 col order-1 order-lg-2 py-1">
+        <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2016/05/8bc8d069-9d1b-4f97-a117-92db6509c59b/870x489__mg_8551.jpg" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption text-muted text-center text-lg-left font-italic">Photo: Wild Code School - La Loupe</figcaption>
+      </div>
+      <div class="col-12 col-lg-6 col order-2 order-lg-1">
+        <p class="text-uppercase text-muted font-weight-bold">Technology</p>
+        <h1 class="text-dark font-weight-bold">Demo Day at Wild Code School : La Loupe</h1>
+        <p class="text-muted text-justify">Welcome ! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+      </div>
+    </div>
+  </section>
+  <!-- author -->
+  <section id="article-author" class="container-fluid py-2">
+    <div class="row justify-content-center py-2">
+      <div class="col-12 col-lg-10">
+        <div class="media col-6 p-0">
+          <img class="rounded-circle" src="https://placeimg.com/70/70/people" alt="Generic placeholder image">
+          <div class="media-body pr-3">
+            <div class="container-fluid">
+              <div class="row justify-content-start">
+                <div class="col-auto align-self-end">
+                  <a href="#" data-toggle="modal" data-target="#wip" class="text-dark text-left">Yanis Foucher</a>
+                </div>
+                <div class="d-none d-md-block col-sm-3 align-self-end">
+                  <button data-toggle="modal" data-target="#wip" class="btn btn-outline-dark btn-sm">Follow</button>
+                </div>
+                <div class="col-12 align-self-start">
+                  <p class="text-muted">An hour ago - <i class="fas fa-star fa-xs"></i> 3 min read</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- article's body -->
+  <section id="article-body" class="container-fluid py-2">
+    <div class="row">
+      <div class="col-12 col-lg-10 p-3 offset-lg-1">
+        <h4 class="font-weight-bold">First</h4>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+        <blockquote class="blockquote text-right my-5 p-3">
+          <p class="font-italic text-secondary">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+          <footer class="blockquote-footer text-muted">Randy Fernandez</footer>
+        </blockquote>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 p-3">
+        <img src="https://placeimg.com/1200/600/any/arch" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption text-muted text-center text-lg-left font-italic">Photo: generated via placeimg.com</figcaption>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-10 p-3 offset-lg-1">
+        <!-- 2nd paragraph -->
+        <h4 class="font-weight-bold">Then</h4>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 p-3">
+        <img src="https://placeimg.com/1200/600/any/tech" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption text-muted text-center text-lg-left font-italic">Photo: generated via placeimg.com</figcaption>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-10 p-3 offset-lg-1">
+        <!-- 3rd paragraph -->
+        <h4 class="font-weight-bold">Finally</h4>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+        <blockquote class="blockquote text-left my-5 p-3">
+          <p class="font-italic text-secondary">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+          <footer class="blockquote-footer text-muted">Randy Fernandez</footer>
+        </blockquote>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet mi felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sit amet leo vehicula leo accumsan commodo. Nullam tincidunt purus dictum, lobortis lectus ac, fringilla nulla. In accumsan mattis ex a ullamcorper. Pellentesque feugiat sapien in lorem aliquam, sed interdum magna hendrerit. Suspendisse efficitur feugiat magna. Ut molestie neque quis leo iaculis convallis. Ut mattis metus vel diam tincidunt, sed imperdiet ligula facilisis. Donec blandit, ex ut varius pellentesque, nunc ex mattis nunc, commodo posuere sapien quam eget odio. Sed congue placerat ex eu imperdiet.
+
+          Quisque pulvinar sapien urna, nec mollis augue vestibulum nec. Donec id tellus sed orci tempus iaculis ac non tellus. Nunc suscipit nibh in arcu venenatis euismod non et neque. Donec commodo volutpat dui feugiat dignissim. Mauris vel augue sit amet nulla laoreet molestie. Praesent elit risus, dictum vel efficitur eget, tristique non lacus. Donec tortor metus, blandit eu pulvinar vel, congue id ante. Vivamus sit amet interdum elit, sit amet sodales quam.
+
+          In pulvinar felis enim, nec venenatis sem venenatis in. Curabitur lobortis nulla eu justo vehicula, sit amet facilisis velit commodo. Donec a lorem finibus, laoreet neque ultricies, vestibulum magna. Pellentesque ornare orci non diam dapibus malesuada. Donec consectetur justo vitae egestas ullamcorper. Sed metus orci, venenatis a tristique fringilla, suscipit gravida dui. Phasellus quis mattis sem, ac bibendum nisl. Ut sed nunc a velit cursus facilisis. Maecenas nec erat ornare, accumsan metus in, vulputate sapien. Morbi a libero bibendum, hendrerit risus eget, rutrum enim. Suspendisse vitae malesuada mi. Phasellus laoreet felis quis est hendrerit, ut pretium est lacinia. Proin pellentesque nibh ut nisi convallis suscipit. Nulla euismod libero eget risus ultricies lobortis.
+
+          Morbi viverra mauris dolor, ut fringilla tellus ornare id. Phasellus at tellus ut nisl pretium commodo. Phasellus id tortor sit amet dolor tempor fermentum at posuere purus. Proin lorem sem, convallis sit amet mauris quis, rutrum imperdiet ligula. Sed lobortis laoreet nulla, laoreet sagittis eros dignissim at. Aliquam rutrum vel metus et iaculis. Aenean maximus dapibus tristique. Cras ac lorem fringilla, faucibus lectus et, mattis lorem. Pellentesque placerat molestie nisi, a euismod purus viverra nec. Nam condimentum odio tellus, vitae tristique erat consequat porttitor.
+
+          Etiam ante turpis, ullamcorper non elementum nec, dictum eu mi. Nam tincidunt pharetra laoreet. Nulla aliquam accumsan turpis, eu sodales sem laoreet id. Sed vitae rutrum augue. Integer vel orci malesuada, sodales sem non, suscipit nisi. Vivamus massa diam, finibus a sapien eu, vehicula mollis augue. Duis volutpat ipsum risus. Mauris vestibulum tristique nunc, dictum viverra elit condimentum non.
+        </p>
+      </div>
+  </section>
+  <!-- read next -->
+  <section id="next" class="container-fluid py-2">
+    <div class="row p-3">
+      <div class="col-12 col-lg-6 p-3">
+        <a href="#">
+        <img src="https://placeimg.com/1000/600/any/nature" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-12 col-lg-6 p-3">
+        <p class="text-uppercase font-weight-bold text-muted">Read next</p>
+          <a href="#" class="text-dark"><h4 class="font-weight-bold">This Could Happen To You... Errors To Avoid</h4></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. </p>
+        <div class="container-fluid">
+          <div class="row justify-content-start">
+            <div class="col-12 p-0">
+              <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Rachel Williams</a>
+            </div>
+            <div class="col-12 p-0">
+              <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- popular articles -->
+  <section id="popular" class="container-fluid py-2">
+      <div class="row">
+      <div class="col-lg-4">
+        <div class="col-12">
+          <a href="#">
+          <img src="https://placeimg.com/1000/600/any/grayscale" class="img-fluid" alt="Responsive image">
+          </a>
+        </div>
+        <div class="col-12 pt-1 pb-3">
+          <p class="text-uppercase font-weight-bold text-muted">Read next popular article</p>
+          <a href="#" class="text-dark"><h4 class="font-weight-bold">How Do You Define ? Because This Definition Is Pretty Hard To Beat.</h4></a>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <div class="container-fluid">
+            <div class="row justify-content-start">
+              <div class="col-12 p-0">
+                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Rachel Williams</a>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="col-12">
+          <a href="#">
+            <img src="https://placeimg.com/1000/600/any/arch" class="img-fluid" alt="Responsive image">
+          </a>
+        </div>
+        <div class="col-12 pt-1 pb-3">
+          <p class="text-uppercase font-weight-bold text-muted">Read next popular article</p>
+          <a href="#" class="text-dark"><h4 class="font-weight-bold">Shortcuts - The Easy Way</h4></a>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <div class="container-fluid">
+            <div class="row justify-content-start">
+              <div class="col-12 p-0">
+                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="col-12">
+          <a href="#">
+            <img src="https://placeimg.com/1000/600/any/tech" class="img-fluid" alt="Responsive image">
+          </a>
+        </div>
+        <div class="col-12 pt-1 pb-3">
+          <p class="text-uppercase font-weight-bold text-muted">Read next popular article</p>
+          <a href="#" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <div class="container-fluid">
+            <div class="row justify-content-start">
+              <div class="col-12 p-0">
+                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer id="foot" class="container-fluid bg-dark pt-2">
+    <!-- top footer, hidden for xs, sm and md -->
+    <div class="container">
+      <div  id="foot-up" class="row justify-content-center">
+        <div class="d-none d-lg-block col-lg-4 p-3">
+          <div class="col-12">
+            <a href="#" data-toggle="modal" data-target="#wip" class="text-white">Discover Medium</a>
+            <p class="text-lg-justify text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere. <a href="#"  class="text-muted" data-toggle="modal" data-target="#wip">Watch</a></p>
+          </div>
+        </div>
+        <div class="d-none d-lg-block col-lg-4 p-3">
+          <div class="col-12">
+            <a href="#" data-toggle="modal" data-target="#wip" class="text-white">Make Medium Yours</a>
+            <p class="text-lg-justify text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere. <a href="#"  class="text-muted" data-toggle="modal" data-target="#wip">Explore</a></p>
+          </div>
+        </div>
+        <div class="d-none d-lg-block col-lg-4 p-3">
+          <div class="col-12">
+            <a href="#"  class="text-white" data-toggle="modal" data-target="#membership">Become a member</a>
+            <p class="text-lg-justify text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere. <a href="#"  class="text-muted" data-toggle="modal" data-target="#membership">Upgrade</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="foot-down" class="row justify-content-center mt-3">
+      <div class="col-12 col-lg-10 d-flex justify-content-between border-top py-3">
+        <a href="#">
+          <h1 class="text-white font-weight-bold">Medium</h1>
+        </a>
+        <div>
+          <button data-toggle="modal" data-target="#wip" class="btn btn-outline-light btn-sm" type="submit">About</button>
+          <button data-toggle="modal" data-target="#wip" class="btn btn-outline-light btn-sm" type="submit">Help</button>
+          <button data-toggle="modal" data-target="#wip" class="btn btn-outline-light btn-sm" type="submit">Legal</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

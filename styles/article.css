@@ -1,0 +1,104 @@
+/* general rules */
+
+* {
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+/* modals */
+
+#modals h5 {
+  font-family: 'fantasy', serif;
+  font-size: 2em;
+}
+
+/* navigation */
+
+.bg-transparent-80 {
+  background-color: rgba(255,255,255,0.80);
+}
+
+/* header */
+
+#head a, #head a:hover {
+  text-decoration: none;
+
+}
+
+#head h1 {
+  font-family: 'fantasy', serif;
+  font-size: 2.5em;
+}
+
+
+/* article's head */
+
+#article-head h1 {
+  text-decoration: none;
+  font-family:'fantasy', serif;
+  font-size: 3em;
+}
+
+.figure-caption {
+  font-size: 0.8rem;
+}
+
+/* article's author */
+
+
+
+/* article's body */
+
+#article-body {
+ font-family: 'fantasy', serif;
+}
+
+#article-body blockquote > p {
+  font-family:'fantasy', serif;
+  font-size: 1em;
+}
+
+/* read next */
+
+#next h4 {
+  font-family:'fantasy', serif;;
+  font-size: 2em;
+}
+
+#next h5 {
+  font-size: 1.2em;
+}
+
+/* popular */
+
+#popular h4 {
+  font-family:'fantasy', serif;
+  font-size: 2em;
+}
+
+#popular h5 {
+  font-size: 1.2em;
+}
+
+/* footer */
+/* footer up */
+
+#foot-up a, #foot-up a:hover {
+  text-decoration: none;
+}
+
+#foot-up p > a {
+  text-decoration: underline;
+}
+
+/* footer down */
+
+#foot-down a, #foot-down a:hover {
+  text-decoration: none;
+  font-family: 'fantasy', serif;
+}

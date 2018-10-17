@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Medium</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- local CSS if needed -->
+    <link rel="stylesheet" href="styles/index.css"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|EB+Garamond:800|Playfair+Display:700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!-- modals -->
+    <section id="modals">
+      <!-- become a member -->
+      <div class="modal fade" id="membership" tabindex="-1" role="dialog" aria-labelledby="becomeMember" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-weight-bold" id="becomeMember">Some thoughts are worth more than a penny.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="container-fluid">
+              <div class="row justify-content-center my-3">
+                <div class="col-3 media-body">
+                  <img class="rounded " src="https://picsum.photos/100/100/?random" alt="Generic placeholder image">
+                </div>
+                <div class="col-9 modal-body pt-0">
+                  <p>Become a member for unlimited, ad-free reading. Just $5/month or $50/year..</p>
+                  <p>Have an account ? <a href="#" class="text-muted" data-toggle="modal" data-target="#sign-in" data-dismiss="modal">Sign in</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">No, thanks</button>
+              <button type="button" href="#" class="btn btn-outline-success">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sign in -->
+      <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="sign-in" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sign-in">Welcome back.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="container-fluid">
+              <div class="row justify-content-center my-3">
+                <form action="" class="align-self-center">
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+                  </div>
+                  <div class="form-group">
+                    <p>Have an account ? <a href="#" class="text-muted" data-toggle="modal" data-target="#membership" data-dismiss="modal">Sign in</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-outline-success">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- work in progress -->
+      <div class="modal fade" id="wip" tabindex="-1" role="dialog" aria-labelledby="workInProgress" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="wip">Oups ! Something went wrong..</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="container-fluid">
+              <div class="row justify-content-center my-3">
+                <div class="col-12 modal-body">
+                  <p>This section is not available yet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- navigation bar -->
+    <div id="navigation" class="container-fluid sticky-top">
+      <div class="row">
+        <div class="container-fluid">
+          <nav class="navbar sticky-top navbar-expand-lg navbar-light m-0 bg-transparent-80">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav list-inline">
+                <li class="nav-item list-inline-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Youth, now</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Culture</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="tech.html">Tech</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Entrepreneurship</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Self</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Politics</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Design</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Science</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">Popular</a>
+                </li>
+                <li class="nav-item list-inline-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#wip">More</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- website's title -->
+    <header id="head" class="container-fluid">
+      <div class="row justify-content-center py-2">
+        <div class="col-12 col-lg-9 bg-white">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-3 d-none d-xl-block text-left">
+              <a href="#" class="text-muted" data-toggle="modal" data-target="#membership">Become a member</a>
+            </div>
+            <div class="col-3 text-left text-lg-center">
+              <a href="index.html"><h1 class="text-dark font-weight-bold">Medium</h1></a>
+            </div>
+            <div class="col-3">
+              <div class="row justify-content-end align-items-center">
+                <div class="d-none d-xl-block col-xl-1">
+                  <a href="#"><i class="fas fa-search text-dark"></i></a>
+                </div>
+                <div class="d-none d-xl-block col-xl-5 text-right">
+                  <a href="#" class="text-success link" data-toggle="modal" data-target="#sign-in">Sign in</a>
+                </div>
+                <div class="col-12 col-xl-5 text-right">
+                  <button href="#" class="btn btn-outline-success" data-toggle="modal" data-target="#membership">Get started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Welcome Jumbotron -->
+    <div id="jumbotron" class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-9">
+          <div class="jumbotron jumbotron-fluid py-5 px-4">
+              <h2 class="font-weight-bold">Welcome on Medium.com</h2>
+              <p>Read the best ... Write the rest</p>
+              <button href="#" class="btn btn-dark" data-toggle="modal" data-target="#membership">Get started</button>
+              <button href="#" class="btn btn-outline-dark" data-toggle="modal" data-target="#membership">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- news -->
+    <div id="news" class="container-fluid mb-2 pb-2">
+      <div class="row justify-content-center">
+        <div id="news-left" class="col-12 col-sm-5 col-lg-4">
+          <div class="row pb-2">
+            <div class="col-12 p-0">
+              <a href="article.html"><img src="https://cdn.radiofrance.fr/s3/cruiser-production/2016/05/8bc8d069-9d1b-4f97-a117-92db6509c59b/870x489__mg_8551.jpg" class="img-fluid" alt="Responsive image"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-2 px-xl-0">
+              <a href="article.html" class="text-dark"><h4 class="font-weight-bold">Demo Day at Wild Code School : La Loupe</h4></a>
+              <p class="text-muted text-justify">Welcome ! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+              <div class="container-fluid">
+                <div class="row justify-content-start">
+                  <div class="col-12 p-0">
+                    <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Yanis Foucher</a>
+                  </div>
+                  <div class="col-12 p-0">
+                    <p class="text-muted mt-1">An hour ago - <i class="fas fa-star fa-xs"></i> 3 min read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="news-mid" class="col-12 col-sm-7 col-lg-3">
+            <div class="row pb-2">
+              <div class="col-4">
+                <img src="https://picsum.photos/600/600/?random" class="img-fluid" alt="Responsive image">
+              </div>
+              <div class="col-8">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Do it Wild !</h4></a>
+                <p class="text-muted d-block text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 col-md-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">The daily wilder</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Sep 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row pb-2">
+              <div class="col-4">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid" alt="Responsive image"></a>
+              </div>
+              <div class="col-8">
+                <a href="#" data-toggle="modal" data-target="#wip"class="text-dark"><h4 class="font-weight-bold">Apple former founder says : Microsoft is a bad fork !</h4></a>
+                <p class="text-muted d-block text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Damien Heulin</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Sep 07 - <i class="fas fa-star fa-xs"></i> 8 months read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row pb-2">
+              <div class="col-4">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid" alt="Responsive image"></a>
+              </div>
+              <div class="col-8">
+                <a href="#" data-toggle="modal" data-target="#wip"class="text-dark"><h4 class="font-weight-bold">Aliens on Earth send us daily messages</h4></a>
+                <p class="text-muted d-block text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Georges Hant</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Sep 07 - <i class="fas fa-star fa-xs"></i> 8 months read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div id="news-right" class="col-lg-3 d-none d-lg-block">
+          <div class="row pb-2">
+            <div class="col-12">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid" alt="Responsive image"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Things of today</h4></a>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+              <div class="container-fluid">
+                <div class="row justify-content-start">
+                  <div class="col-12 p-0">
+                    <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Audren Thibault</a>
+                  </div>
+                  <div class="col-12 p-0">
+                    <p class="text-muted mt-1">Sep 20 - <i class="fas fa-star fa-xs"></i> 10 min read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-uppercase text-right">
+          See all featured <i class="fas fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- body and footer -->
+    <div id="body" class="container-fluid">
+      <div class="row p-0 justify-content-center">
+        <div class="col-12 col-lg-6 p-0 ">
+<!-- featured for members -->
+          <div class="container-fluid py-2">
+            <div class="row justify-content-between border-bottom border-dark my-2 mb-2">
+              <div class="col-auto col-lg-auto border-bottom">
+                <h5 class="font-weight-bold">Featured for members</h5>
+              </div>
+              <div class="d-none d-lg-block col-lg-auto text-uppercase text-right">
+                More <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Awesome nature !</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Bootstrap killed me !</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Angular or not Angular ?</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Перед лицом дружбы ничто не существует.</h4></a>
+                <p class="text-muted">Элизабет.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://image.freepik.com/free-vector/russia-map-design-with-flag-and-light-background-vector_1142-3904.jpg" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+          </div>
+<!-- technology -->
+          <div class="container-fluid py-2">
+            <div class="row justify-content-between border-bottom border-dark my-2">
+              <div class="col-auto col-lg-auto border-bottom">
+                <a href="tech.html"><h5 class="text-dark font-weight-bold">Technology</h5></a>
+              </div>
+              <div class="d-none d-lg-block col-lg-auto text-uppercase text-right">
+                <a href="tech.html" class="text-dark">More <i class="fas fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="article.html" class="text-dark"><h4 class="font-weight-bold">Demo Day at Wild Code School : La Loupe</h4></a>
+                <p class="text-muted">Welcome ! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="article.html" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Yanis Foucher</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">An hour ago - <i class="fas fa-star fa-xs"></i> 3 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="article.html">
+                  <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2016/05/8bc8d069-9d1b-4f97-a117-92db6509c59b/870x489__mg_8551.jpg" class="img-fluid p-1" alt="Responsive image">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Shortcuts - The Easy Way</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Shortcuts - The Easy Way</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+          </div>
+<!-- creativity -->
+          <div class="container-fluid py-2">
+            <div class="row justify-content-between border-bottom  border-dark my-2">
+              <div class="col-auto col-lg-auto border-bottom">
+                <h5 class="font-weight-bold">Creativity</h5>
+              </div>
+              <div class="d-none d-lg-block col-lg-auto text-uppercase text-right">
+                More <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Shortcuts - The Easy Way</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Shortcuts - The Easy Way</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+              </div>
+            </div>
+          </div>
+<!-- entrepreneurship -->
+          <div class="container-fluid py-2">
+                      <div class="row justify-content-between border-bottom  border-dark my-2">
+                        <div class="col-auto col-lg-auto border-bottom">
+                          <h5 class="font-weight-bold">Entrepreneurship</h5>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-auto text-uppercase text-right">
+                          More <i class="fas fa-angle-right"></i>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-9">
+                          <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                          <div class="container-fluid">
+                            <div class="row justify-content-start">
+                              <div class="col-12 p-0">
+                                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                              </div>
+                              <div class="col-12 p-0">
+                                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-9">
+                          <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Shortcuts - The Easy Way</h4></a>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                          <div class="container-fluid">
+                            <div class="row justify-content-start">
+                              <div class="col-12 p-0">
+                                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                              </div>
+                              <div class="col-12 p-0">
+                                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-9">
+                          <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                          <div class="container-fluid">
+                            <div class="row justify-content-start">
+                              <div class="col-12 p-0">
+                                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                              </div>
+                              <div class="col-12 p-0">
+                                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-9">
+                          <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">Shortcuts - The Easy Way</h4></a>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                          <div class="container-fluid">
+                            <div class="row justify-content-start">
+                              <div class="col-12 p-0">
+                                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                              </div>
+                              <div class="col-12 p-0">
+                                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-9">
+                          <a href="#" data-toggle="modal" data-target="#wip" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+                          <div class="container-fluid">
+                            <div class="row justify-content-start">
+                              <div class="col-12 p-0">
+                                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                              </div>
+                              <div class="col-12 p-0">
+                                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <a href="#"><img src="https://picsum.photos/600/600/?random" data-toggle="modal" data-target="#wip" class="img-fluid p-1" alt="Responsive image"></a>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+<!-- popular -->
+        <div id="pop-aside" class="d-none d-lg-block col-lg-3 p-0">
+          <div class="container-fluid pl-5">
+            <div class="row m-3"></div>
+            <div class="row justify-content-between border-bottom border-dark mb-2">
+              <div class="col-auto col-lg-auto">
+                <h5 class="font-weight-bold">Popular on Medium</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <h2 class="text-muted text-right">01</h2>
+              </div>
+              <div class="col-9">
+                <a href="article.html" class="text-dark"><h4 class="font-weight-bold">Demo Day at Wild Code School : La Loupe</h4></a>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="article.html" class=" text-dark text-left m-0">Yanis Foucher</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">An hour ago - <i class="fas fa-star fa-xs"></i> 3 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <h2 class="text-muted text-right">02</h2>
+              </div>
+              <div class="col-9">
+                <a href="#" class="text-dark"><h4 class="font-weight-bold">Перед лицом дружбы ничто не существует.</h4></a>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <h2 class="text-muted text-right">03</h2>
+              </div>
+              <div class="col-9">
+                <a href="#" class="text-dark"><h4 class="font-weight-bold">This Could Happen To You... Errors To Avoid</h4></a>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <h2 class="text-muted text-right">04</h2>
+              </div>
+              <div class="col-9">
+                <a href="#" class="text-dark"><h4 class="font-weight-bold">How Do You Define ? Because This Definition Is Pretty Hard To Beat.</h4></a>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <h2 class="text-muted text-right">05</h2>
+              </div>
+              <div class="col-9">
+                <a href="#" class="text-dark"><h4 class="font-weight-bold">5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    <div class="col-12 p-0">
+                      <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+                    </div>
+                    <div class="col-12 p-0">
+                      <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- footer -->
+            <div id="foot" class="border-top mt-2 pt-3">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">Help</a></li>
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">Status</a></li>
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">Writer</a></li>
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">Blog</a></li>
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">Career</a></li>
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">Privacy</a></li>
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">Terms</a></li>
+                <li class="list-inline-item"><a href="#" class="text-muted" data-toggle="modal" data-target="#wip">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>
